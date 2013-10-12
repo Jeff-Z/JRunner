@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FieldEditorActivity"
+    android:background="@android:color/white" >
+
+   
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="HOMEPIC"
+        
+        android:src="@drawable/ic_fieldeditor"        
+        android:layout_marginTop="90px"
+        android:layout_marginLeft="50px"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_fieldEditor"
+        android:layout_width="622px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="453px"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editText_fieldName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="50px"
+            android:textColor="#3CC9FF"
+            android:text="" 
+            android:background="@null" 
+            android:layout_marginLeft="30px"
+            android:inputType="text"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:textColor="@android:color/white"
+            android:textSize="50px"
+            android:layout_marginTop="50px"
+            android:background="@drawable/custom_button"
+            android:onClick="onClickSave" />
+        
+        <Button
+            android:id="@+id/button_gpslocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开始定位"
+            android:textColor="@android:color/white"
+            android:textSize="50px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/custom_button"
+            android:onClick="onClickGPS" />  
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textColor="@android:color/white"
+            android:textSize="50px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/custom_button_red"
+            android:onClick="onClickDelete" />  
+            
+    </LinearLayout>
+
+</FrameLayout>

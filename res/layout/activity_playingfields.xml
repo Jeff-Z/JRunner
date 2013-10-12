@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayingFieldsActivity"
+    android:background="@android:color/white" >
+
+   
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="HOMEPIC"
+        
+        android:src="@drawable/button_playingfields"        
+        android:layout_marginTop="82px"
+        android:layout_marginLeft="43px"        
+        android:padding="4dp"
+        
+        android:onClick="onClickAddField"
+        />
+    
+    <ScrollView
+        android:layout_width="620px"
+        android:layout_height="700px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="372px" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_playingfieldslist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+        </LinearLayout>
+        
+    </ScrollView>
+    
+
+</FrameLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.hartech.jrunner"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> 
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.hartech.jrunner.HomeActivity"
+            android:label="@string/title_activity_home" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.hartech.jrunner.RunningActivity"
+            android:label="@string/title_activity_running" >
+        </activity>
+        <activity
+            android:name="cn.hartech.jrunner.PlayingFieldsActivity"
+            android:label="@string/title_activity_fields" >
+        </activity>
+        <activity
+            android:name="cn.hartech.jrunner.RunningRecordsActivity"
+            android:label="@string/title_activity_running_records" >
+        </activity>
+        <activity
+            android:name="cn.hartech.jrunner.FieldEditorActivity"
+            android:label="@string/title_activity_field_editor" >
+        </activity>
+        <activity
+            android:name="cn.hartech.jrunner.BellRingerActivity"
+            android:label="@string/title_activity_bell_ringer" >
+
+        </activity>
+        
+        
+        <service android:name="cn.hartech.jrunner.BellRingerService" />
+        
+        <!-- 闹钟调用的服务 与 开机自动调用服务 都在此类 -->
+        <receiver android:name="cn.hartech.jrunner.BellRingerBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.alarm.cn.hartech.jrunner.bellringerservice" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+    </application>
+
+    
+</manifest>

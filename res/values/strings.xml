@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JRunner!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_home">JRunner!</string>
+    <string name="title_activity_running">RunningActivity</string>
+    <string name="title_activity_fields">FieldsActivity</string>
+    <string name="title_activity_running_records">RunningRecordsActivity</string>
+    <string name="title_activity_field_editor">FieldEditorActivity</string>
+    <string name="title_activity_bell_ringer">BellRingerActivity</string>
+    <string name="action_settings">Settings</string>
+    
+    <string-array name="period_type"> 
+        <item>每日</item> 
+        <item>每周</item> 
+        <item>每月</item> 
+    </string-array> 
+
+    <string-array name="run_times"> 
+        <item>一次</item> 
+        <item>两次</item> 
+        <item>三次</item> 
+        <item>四次</item> 
+        <item>五次</item> 
+    </string-array> 
+    
+    <string-array name="run_length"> 
+        <item>500米</item> 
+        <item>1000米</item> 
+        <item>2000米</item> 
+        <item>5000米</item> 
+        <item>10000米</item> 
+    </string-array> 
+    
+    <string-array name="remember_type"> 
+        <item>仅提醒一次</item> 
+        <item>一直提醒</item> 
+    </string-array> 
+</resources>
