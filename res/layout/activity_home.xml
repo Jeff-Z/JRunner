@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/imageViewHomePIC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_pic" 
+        android:contentDescription="HOMEPIC"
+        
+        android:layout_marginTop="90px"        
+        android:layout_marginLeft="50px"
+          />
+    
+    <ImageButton
+        android:id="@+id/imageButton_Field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="HOMEPIC"
+        
+        android:src="@drawable/button_fields"
+        android:layout_marginTop="82px"
+        android:layout_marginLeft="292px"
+        android:padding="4dp"
+        
+        android:onClick="onClickPlayingFields"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton_GO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="HOMEPIC"
+        
+        android:src="@drawable/button_go"        
+        android:layout_marginTop="332px"
+        android:layout_marginLeft="42px"        
+        android:padding="4dp"
+        
+        android:onClick="onClickStartRunning"
+        />
+
+   <ImageButton
+        android:id="@+id/imageButton_Records"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="HOMEPIC"
+        
+        android:src="@drawable/button_records"        
+        android:layout_marginTop="612px"
+        android:layout_marginLeft="182px"        
+        android:padding="4dp"
+        
+        android:onClick="onClickRunningRecords"
+        />
+   
+   <ImageButton
+        android:id="@+id/imageButton_BellRinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="HOMEPIC"
+        
+        android:src="@drawable/button_bellringer"        
+        android:layout_marginTop="842px"
+        android:layout_marginLeft="42px"        
+        android:padding="4dp"
+        
+        android:onClick="onClickBellRinger"
+        />
+</FrameLayout>

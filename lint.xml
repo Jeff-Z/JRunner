@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HardcodedText" severity="ignore" />
+    <issue id="PxUsage" severity="ignore">
+        <ignore path="res\layout\activity_home.xml" />
+    </issue>
+</lint>

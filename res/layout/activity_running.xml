@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RunningActivity"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/imageViewHomePIC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/running_pic" 
+        android:contentDescription="HOMEPIC"
+        
+        android:layout_marginTop="90px"        
+        android:layout_marginLeft="50px"
+        />
+    
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="00:00"
+        android:textSize="80sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        
+        
+        android:layout_marginTop="95px"
+        android:layout_marginLeft="80px"     />
+    
+    <TextView
+        android:id="@+id/textViewPlayingField"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        
+        android:text=""
+        android:textSize="45sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        
+        
+        android:layout_marginTop="90px"
+        android:layout_marginLeft="565px"     />
+    
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_stop"
+        
+        android:layout_marginTop="333px"
+        android:layout_marginLeft="272px"        
+        android:padding="4dp"
+        
+        android:onClick="onClickStopRunning"
+        
+        android:contentDescription="HOMEPIC"/>
+
+    <TextView
+        android:id="@+id/textViewSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="0.0"
+        android:textSize="80sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        
+        android:layout_marginTop="615px"
+        android:layout_marginLeft="110px" />
+
+    <TextView
+        android:id="@+id/textViewDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="0000"
+        android:textSize="85sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        
+        android:layout_marginTop="840px"
+        android:layout_marginLeft="90px"     />
+
+</FrameLayout>
